@@ -1,3 +1,25 @@
 body {
     font-family: 'Ambient';
+    color: white;
+    background-image: url(../images/stars.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+button {
+    width: 150px;
+    height: 75px;
+    font-size: 28px;
+    margin: 0px 15px 15px 15px;
+    border-radius: 15px;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+hr {
+    background-color: white;
 }
