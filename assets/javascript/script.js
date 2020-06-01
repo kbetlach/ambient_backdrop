@@ -45,12 +45,12 @@ function playNightDrive() {
 //Function housing our studying playlist. Will play random song on button click.
 function playStudying() {
     let angelina = new Audio("assets/audio/studying/angelina.mp3");
-    let birds = new Audio("assets/audio/studying/birds.mp3");
+    let memories = new Audio("assets/audio/studying/memories_renewed.mp3");
     let candyIsland = new Audio("assets/audio/studying/candy_island.mp3");
     let coffee = new Audio("assets/audio/studying/coffee.mp3");
     let warm = new Audio("assets/audio/studying/warm.mp3");
 
-    let studyingSongs = [angelina, birds, candyIsland, coffee, warm];
+    let studyingSongs = [angelina, memories, candyIsland, coffee, warm];
 
     let randomStudyingSongs = studyingSongs[Math.floor(Math.random() * studyingSongs.length)];
 
