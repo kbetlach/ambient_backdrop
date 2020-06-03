@@ -1,4 +1,6 @@
-function play() {
+let audioPlaying = false;
+console.log(audioPlaying);
+
     let ophelia = new Audio("assets/audio/focus/ophelia.mp3");
     let bluebell = new Audio("assets/audio/focus/bluebell.mp3");
     let horses = new Audio("assets/audio/focus/horses.mp3");
@@ -18,8 +20,16 @@ function play() {
 
     let songs = [ophelia, bluebell, horses, heyComeTogether, england, memories, brokenThings, canada, lazyMorning, sleepwalker, theHealing, angelina, memoriesRenewed, candyIsland, coffee, warm];
 
-    let randomSong = songs[Math.floor(Math.random() * songs.length)];
+    function play() {
 
-    randomSong.play();
-    console.log(randomSong);
-}
+        audioplaying = true;
+        let randomSong = songs[Math.floor(Math.random() * songs.length)];
+
+        if (audioplaying === true) {
+            randomSong.pause();
+            randomSong.currentTime = 0;
+        }
+
+        randomSong.play();
+        console.log(randomSong);    
+    }
