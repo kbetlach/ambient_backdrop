@@ -32,13 +32,22 @@
         <div class="jumbotron animated fadeIn delay-2s">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <button class="bg-light text-black" id="playBtn" onclick=play()>Play</button>
+                    <audio src="" controls id="audioPlayer">
+                        Your browser doesn't support HTML5 :(
+                    </audio>
+
+                    <ul id="playlist">
+                        <li class="current-song"><a href="assets/audio/warm.mp3">Warm</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
 
     </div>
 
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
     <script src="assets/javascript/script.js"></script>
     
 </body>
