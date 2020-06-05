@@ -24,3 +24,14 @@ button {
 hr {
     background-color: white;
 }
+
+#playlist{
+    list-style: none;
+}
+#playlist li a{
+    color:white;
+    text-decoration: none;
+}
+#playlist .current-song a{
+    color:yellow;
+}
