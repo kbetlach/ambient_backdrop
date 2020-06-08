@@ -1,7 +1,6 @@
 body {
     font-family: 'Ambient';
     color: white;
-    background-image: url(../images/stars.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,4 +22,15 @@ button {
 
 hr {
     background-color: white;
+}
+
+#playlist{
+    list-style: none;
+}
+#playlist li a{
+    color:white;
+    text-decoration: none;
+}
+#playlist .current-song a{
+    color:yellow;
 }

@@ -10,10 +10,16 @@
 </head>
 
 <body>
+    <style>
+        body {
+            background-image: url(assets/images/stars.jpg);
+        }
+    </style>
+    
     <nav class="navbar navbar-dark bg-dark">
         <span class="navbar-brand mb-0 h1">AMBIENT BACKDROP</span>
-            <div class="col-md-3" id="about">ABOUT</div>
-            <div class="col-md-3" id="credits">CREDITS</div>
+            <div class="col-md-3 text-center" id="about">ABOUT</div>
+            <div class="col-md-3 text-center" id="credits">CREDITS</div>
     </nav>
 
     <br />
@@ -23,7 +29,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h1>How Can I Help You Today?</h1>
-                <h3>Are you in need of some rest and relaxation? Or something to help you focus? Hit the play button and let us handle the rest...</h3>
+                <h3>Pick the button that most closely matches how you feel, or want to feel.</h3>
             </div>
         </div>
 
@@ -32,15 +38,9 @@
         <div class="jumbotron animated fadeIn delay-2s">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <audio src="" controls id="audioPlayer">
-                        Your browser doesn't support HTML5 :(
-                    </audio>
-
-                    <ul id="playlist">
-                        <li class="current-song"><a href="assets/audio/warm.mp3">Warm</a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                    </ul>
+                    <a href="pages/focus.html"><button>Focus</button></a>
+                    <a href="pages/meditative.html"><button>Meditative</button></a>
+                    <a href="pages/unplugged.html"><button>Unplugged</button></a>
                 </div>
             </div>
         </div>
