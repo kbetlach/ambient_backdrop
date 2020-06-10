@@ -9,6 +9,7 @@ body {
     bottom: 0;
     min-width: 100%; 
     min-height: 100%;
+    background-color: transparent;
   }
 
 nav {
@@ -23,14 +24,25 @@ nav {
 .about, .credits {
     margin-right: 25px;
     font-size: 18px;
+    border: none;
+    background-color: transparent;
+    color: white;
 }
 
-button {
+.playlistButtons {
     width: 150px;
     height: 75px;
     font-size: 28px;
     margin: 0px 15px 15px 15px;
     border-radius: 15px;
+}
+
+.modal-dialog {
+    color: black;
+}
+
+#aboutModalTitle, #creditsModalTitle {
+    font-size: 28px;
 }
 
 .jumbotron {
@@ -52,4 +64,5 @@ hr {
 
 #playlist .current-song a{
     color:yellow;
+    font-size: 22px;
 }
