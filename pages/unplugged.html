@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ambient Backdrop</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
     <link rel="stylesheet" type="text/css" href="../assets/styles/animate.css">
 </head>
@@ -22,11 +25,11 @@
         Your browser does not support HTML5 video.
       </video>
 
-    <nav class="navbar navbar-dark bg-dark">
+      <nav class="navbar navbar-dark bg-dark">
         <a href="../index.html" class="navbar-brand mb-0 h1">AMBIENT BACKDROP</span></a>
         <ul class="nav-items">
-            <a class="about">About</a>
-            <a class="credits">Credits</a>
+            <button class="about" data-toggle="modal" data-target="#aboutModal">About</button>
+            <button class="credits" data-toggle="modal" data-target="#creditsModal">Credits</button>
         </ul>
     </nav>
 
@@ -62,6 +65,79 @@
         </div>
 
     </div>
+
+            <!--About Modal-->
+            <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="aboutModalTitle">About Ambient Backdrop</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>This app was created by Kyle Betlach, an individual with a deep love and appreciation for instrumental music, whether it be ambient, acoustic, electronic or post-rock.</p>
+
+                      <p>The "mood" playlists are entirely subjective, but in general they reflect the type of music Kyle seeks out when in need of calm and quiet, or mellow background noise.</p>
+
+                      <p>This is the type of music Kyle relied on extensively when learning how to code and progressing through a coding bootcamp. The creation of this app is a sort of "thank you" to the music that kept his mind in the right space, as well as an opportunity to learn about HTML5 audio and video.</p>
+
+                      <p>Hopefully this app can help you in a similar way! Thanks for stopping by and having a listen!</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!--Credits Modal-->
+            <div class="modal fade" id="creditsModal" tabindex="-1" role="dialog" aria-labelledby="creditsModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="creditsModalTitle">Track Credits</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>All music was found on freemusicarchive.org. All tracks are royalty free and designated as free for non-commercial use. All tracks are clickable and linked to their entry in the Free Music Archive!</p>
+
+                      <h3><u>Focus Playlist</u></h3>
+                      <ul>
+                        <li><a href=https://freemusicarchive.org/music/Cambo/Chilled_Beats/Warm>Warm by Cambo</a></li>
+                        <li><a href=https://freemusicarchive.org/music/Tyler_Twombly/Chill_Beats_EP/Tyler_Twombly_-_Chill_Beats_-EP-_-_04_Candy_Island>Candy Island by Tyler Twombly</a></li>
+                        <li><a href=https://freemusicarchive.org/music/Pictures_of_the_Floating_World/England/England>England by Pictures of the Floating World</a></li>
+                        <li><a href=https://freemusicarchive.org/music/Ketsa/Raising_Frequecy/Memories_Renewed>Memories Renewed by Ketsa</a></li>
+                        <li><a href=https://freemusicarchive.org/music/Pictures_of_the_Floating_World/Waves_1528/Waves_1217>Waves by Pictures of the Floating World</a></li>
+                      </ul>
+
+                      <h3><u>Meditative Playlist</u></h3>
+                      <ul>
+                        <li><a href=https://freemusicarchive.org/music/Walt_Thisney/Sampler_EP_Vol_11/04_Walt_Thisney_-_Finding_Beauty_in_Broken_Things>Finding Beauty in Broken Things by Walt Thisney</a></li>
+                        <li><a href=https://freemusicarchive.org/music/Daniel_Birch/The_Big_Loop_The_Fugue_Original_Podcast_Score/The_Fugue_1381>The Fugue by Daniel Birch</a></li>
+                        <li><a href=https://freemusicarchive.org/music/Pictures_of_the_Floating_World/Canada/Canada_1385>Canada by Pictures of the Floating World</a></li>
+                        <li><a href=https://freemusicarchive.org/music/King_Imagine/Next_Nowhereexe/05_King_Imagine_-_Lazy_Morning>Lazy Morning by King Imagine</a></li>
+                        <li><a href=https://freemusicarchive.org/music/Sergey_Cheremisinov/The_Healing/The_Healing7>The Healing by Sergey Cheremisinov</a></li>
+                      </ul>
+
+                      <h3><u>Unplugged Playlist</u></h3>
+                      <ul>
+                        <li><a href=https://freemusicarchive.org/music/Axletree/Sunset_EP/Bluebell_Acoustic>Bluebell by Axletree</a></li>
+                        <li><a href=https://freemusicarchive.org/music/Lobo_Loco/Salad_Mixed/Hey_Come_Together_ID_1235>Hey Come Together by Lobo Loco</a></li>
+                        <li><a href=https://freemusicarchive.org/music/Axletree/Sunset_EP/Breezy_May_Acoustic>Breezy May by Axletree</a></li>
+                        <li><a href=https://freemusicarchive.org/music/Pictures_of_the_Floating_World/Horses/Horses_1708>Horses by Pictures of the Floating World</a></li>
+                        <li><a href=https://freemusicarchive.org/music/Lobo_Loco/Wanted_alive__well/Living_in_My_Memories_M_ID_1134>Living in my Memories by Lobo Loco</a></li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
 
     <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
     <script src="../assets/javascript/script.js"></script>
