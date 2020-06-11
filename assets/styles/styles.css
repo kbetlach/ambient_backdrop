@@ -3,6 +3,10 @@ body {
     color: white;
 }
 
+.jumbotron {
+    background-color: transparent;
+}
+
 #video {
     position: fixed;
     right: 0;
@@ -37,16 +41,21 @@ nav {
     border-radius: 15px;
 }
 
+a {
+    text-decoration: none; 
+    color: black;
+}
+
 .modal-dialog {
     color: black;
 }
 
-#aboutModalTitle, #creditsModalTitle {
-    font-size: 28px;
+.modal-body {
+    font-size: 18px;
 }
 
-.jumbotron {
-    background-color: transparent;
+#aboutModalTitle, #creditsModalTitle {
+    font-size: 28px;
 }
 
 hr {
