@@ -75,3 +75,55 @@ hr {
     color:yellow;
     font-size: 22px;
 }
+
+/*MEDIA QUERIES================================*/
+@media (max-width: 414px) {
+
+    .navbar-brand {
+        font-size: 28px;
+        text-decoration: underline;
+        position: relative;
+        left: 50px;
+    }
+
+    .about, .credits {
+        font-size: 18px;
+        position: relative;
+        left: 50px;
+        top: 5px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .navbar-brand {
+        font-size: 28px;
+        text-decoration: underline;
+        position: relative;
+        left: 20px;
+    }
+
+    .about, .credits {
+        font-size: 18px;
+        position: relative;
+        left: 25px;
+        top: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .navbar-brand {
+        font-size: 24px;
+        text-decoration: underline;
+        position: relative;
+        left: 20px;
+    }
+
+    .about, .credits {
+        font-size: 18px;
+        position: relative;
+        left: 25px;
+        top: 5px;
+    }
+}
