@@ -26,6 +26,8 @@ nav {
   }
 
 .about, .credits {
+    position: relative;
+    top: 5px;
     margin-right: 25px;
     font-size: 18px;
     border: none;
