@@ -75,6 +75,12 @@ hr {
     font-size: 22px;
 }
 
+.songLists a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
 /*MEDIA QUERIES================================*/
 @media (max-width: 414px) {
 
